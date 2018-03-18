@@ -1,0 +1,31 @@
+//n terminada, apenas teste!
+
+import java.util.Scanner;
+
+public class CalculadoraObjeto {
+	public static void main(String[] args) {
+		int menu = 0;
+		
+		Operacoes operacoes = new Operacoes();
+		
+		System.out.println("Digite 1- para somar; 2- para dividir; 3- para multiplicar; 4- para subtrair:");
+		Scanner leitor = new Scanner(System.in);
+		menu = leitor.nextInt();
+		
+		switch (menu){
+		case 1:
+			System.out.println("Vc escolheu somar: digite os dois valores:");
+			operacoes.setValor(leitor.nextInt());
+			operacoes.setValor2(leitor.nextInt());
+			System.out.println("sua soma foi:" + (Operacoes.getValor()+ Operacoes.getValor2()));
+		break;	
+		case 2:
+			System.out.println("Vc escolheu dividir: digite os dois valores:");
+			operacoes.setValor(leitor.nextInt());
+			operacoes.setValor2(leitor.nextInt());
+			System.out.println("sua soma foi:" + (Operacoes.getValor() / Operacoes.getValor2()));
+		break;	
+		}
+	}
+
+}
