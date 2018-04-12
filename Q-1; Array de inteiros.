@@ -1,0 +1,21 @@
+package array;
+
+import java.util.Arrays;
+
+public class fds {
+
+	public static void main(String[] args) {
+		
+		int size = 300;
+		
+		int[] array = new int[size];
+		
+		if(args.length != 0)
+			size = Integer.parseInt(args[0]);
+		Arrays.fill(array, 45);
+		
+		System.out.println(Arrays.toString(array));
+		
+	}
+	
+}
